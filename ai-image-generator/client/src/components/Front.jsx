@@ -1,6 +1,6 @@
-import React, {useRef, useEffect} from "react";
+import React, { useRef, useEffect } from "react";
 import { SlMagicWand } from "react-icons/sl";
-import {gsap} from 'gsap'
+import { gsap } from 'gsap'
 const Front = ({
   title = "Best text to image generator",
   subtitle = "Turn text to image, in seconds",
@@ -32,20 +32,20 @@ const Front = ({
   }, []);
 
   return (
-    <div className="bg-blue-500 text-white h-screen w-screen flex  justify-center">
-      <div className="flex flex-col items-center ">
+    <div className=" bg-blue-500 text-white h-full w-full flex justify-center">
+      <div className="w-full h-full flex flex-col items-center ">
         <p className="text-s mt-[90px]  h-[30px] flex items-center justify-center rounded-full border-2 border-black p-2">
           {title} <SlMagicWand fill="yellow" />
         </p>
-        <div className='text-6xl font-bold flex flex-col items-center justify-center w-full mt-[50px] gap-5 ' style={{wordSpacing: '5px'}} ref={textRef}>
-  <div >
-    Turn text to 
-  </div>
-  <div className='mt-2'>
-    <span className='text-blue-600  opacity-0'>&nbsp;image</span>
-    <span className='opacity-0'>,in seconds</span>
-  </div>
-</div>
+        <div className='text-6xl font-bold flex flex-col items-center justify-center w-full mt-[50px] gap-5 ' style={{ wordSpacing: '5px' }} ref={textRef}>
+          <div >
+            Turn text to
+          </div>
+          <div className='mt-2'>
+            <span className='text-blue-600  opacity-0'>&nbsp;image</span>
+            <span className='opacity-0'>,in seconds</span>
+          </div>
+        </div>
 
       </div>
     </div>
